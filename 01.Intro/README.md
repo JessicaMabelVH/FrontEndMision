@@ -40,8 +40,8 @@ Descripción:
 
 ## Resolución:
 
-- [Formato de especificación de requerimientos de software](Requerimientos_de_software.pdf) (incluye: *buyer persona* y público objetivo)
-
-- [*Wireframe*](https://rebrand.ly/WAbogabot)
-
-
+- [Toma de requerimientos](requerimientos_de_software.pdf)
+- [*Buyer persona*](buyer_persona.pdf)
+- [*Público objetivo*](publico_objetivo.pdf)
+- [*Wireframe*](https://rebrand.ly/WFabogabot)
+- [*UI*](https://rebrand.ly/UIabogabot)
