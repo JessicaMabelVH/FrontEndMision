@@ -33,4 +33,5 @@ Bonus:
 
 
 ## Resolución:
-- Página de la pastelería: 🔗[Butterfly](https://htmlpreview.github.io/?https://github.com/JessicaMabelVH/FrontEndMision/blob/main/02.HTML/index.html)
+- 🔗[Preview](https://ryf34h.csb.app/)
+- 🔗[CodeSandbox](https://codesandbox.io/embed/damp-wood-ryf34h?fontsize=14&hidenavigation=1&theme=dark&view=preview)
