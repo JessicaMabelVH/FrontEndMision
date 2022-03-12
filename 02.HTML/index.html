@@ -1,79 +1,150 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Butterfly</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='css/styles.css'>
-</head>
-<body>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="msapplication-tap-highlight" content="no" />
 
-<div class="header">
-    <div class="container-fluid">
-      <a href=""><h1 class="brand"><span><img src="img/butterfly_1.png" width="10%"></span></h1></a>
-      <ul class="nav-items">
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Servicios</a></li>
-        <li><a href="#">Menú</a></li>
-        <li><a href="#">Contacto</a></li>
-      </ul>
-    </div>
-  </div>
-  
-  <div class="jumbotron">
-    <div class="container">
-      <h1>.Bienvenido a <span>Butterfly</span>.</h1>
-      <p>Somos <strong><i>creadoras</i></strong>, <strong><i>innovadoras</i></strong> y amamos los <strong><i>pasteles</i></strong>.</p>
-      <a class="btn">Conocenos</a>
-    </div>
-  </div>
-  
-  <div class="section">
-    <div class="container">
-      <h2 class="heading">¿Qué ofrecemos?:</h2>
-      <div class="row">
-        <div class="col-sm-4">
-          <h3>Servicio 1.</h3>
-          <p>Muy lejos, más allá de las montañas de palabras, alejados de los países de las vocales y las consonantes, viven los textos simulados.</p>
-          <a href="" class="btn">Saber más.</a>
-        </div>
-        <div class="col-sm-4">
-          <h3>Servicio 2.</h3>
-          <p>Muy lejos, más allá de las montañas de palabras, alejados de los países de las vocales y las consonantes, viven los textos simulados.</p>
-          <a href="" class="btn">Saber más.</a>
-        </div>
-        <div class="col-sm-4">
-          <h3>Servicio 3.</h3>
-          <p>Muy lejos, más allá de las montañas de palabras, alejados de los países de las vocales y las consonantes, viven los textos simulados.</p>
-          <a href="" class="btn">Saber más.</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-3">
-          <h4>Butterfly</h4>
-          <h5>Derretimos tus sentidos</h5>
-          <address>
-            CDMX<br>
-            México<br>
-            55 1234 5678
-          </address>
-        </div>
-        <div class="col-sm-9 text-right">
-          <ul class="list-unstyled list-inline">
-            <li><a href="#">Sobre nosotras</a></li>
-            <li><a href="#">Contacto</a></li>
-            <li><a href="#">Trabajo</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+        <link rel="manifest" href="favicon/site.webmanifest" />
+        <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="apple-mobile-web-app-title" content="Butterfly" />
+        <meta name="application-name" content="Butterfly" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
 
-</body>
+        <title>Butterfly • Derritiendo tus sentidos</title>
+
+        <link rel="stylesheet" href="css/butterfly.css" />
+        <link rel="stylesheet" href="css/custom.css" />
+        <link rel="stylesheet" href="css/boxicons.min.css" />
+    </head>
+
+    <body>
+        <nav class="navbar is-fixed-top">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="index.html"> <img src="img/logo_slogan.svg" width="100%" /></a>
+                    <span class="navbar-burger" data-target="navbarMenuHeroA">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </div>
+                <div id="navbarMenuHeroA" class="navbar-menu">
+                    <div class="navbar-start">
+                        <a class="navbar-item" href="flavors.html"> Sabores </a>
+                        <a class="navbar-item"> Nosotras </a>
+                        <a class="navbar-item"> Contacto </a>
+                    </div>
+                    <div class="navbar-end">
+                        <span class="navbar-item">
+                            <a class="button is-primary is-light">
+                                <span class="icon">
+                                    <i class="bx bx-user-circle bx-sm"></i>
+                                </span>
+                                <span>Mi cuenta</span>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section class="hero is-medium has-bg">
+            <div class="hero-body has-layer">
+                <div class="container has-text-centered">
+                    <h1 class="title is-size-1 mt-5 pt-5">Bienvenido a </h1>
+                    <img src="img/logo_slogan.svg" width="50%">
+                </div>
+            </div>
+        </section>
+
+        <section class="section mb-5">
+            <div class="container">
+ 
+                <h2 class="title has-te">Secciones</h2>
+
+                <div class="columns pt-5">
+                    <div class="column">
+                        <div class="card card-has-equal-height has-background-primary-light">
+                            <div class="card-content">
+                                <div class="content has-text-centered">
+                                    <i class='bx bx-cake bx-sm' ></i> <a class="title is-4" href="flavors.html">Sabores</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="card card-has-equal-height has-background-link-light">
+                            <div class="card-content">
+                                <div class="content has-text-centered">
+                                    <i class='bx bx-party bx-sm' ></i> <a class="title is-4" href="ornaments.html">Adornos</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="card card-has-equal-height has-background-info-light">
+                            <div class="card-content">
+                                <div class="content has-text-centered">
+                                    <i class='bx bx-credit-card bx-sm' ></i> <a class="title is-4" href="payout.html">Resumen de la orden</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="container is is-pulled-right is-hidden-widescreen">
+                    <a class="button is-link is-light mr-2" href="flavors.html">Regresar</a>
+                    <a class="button is-link is-light">Continuar</a>
+                </div>
+
+            </div>
+        </section>
+    </body>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="is-flex is-flex-wrap-wrap is-justify-content-between is-align-items-center">
+                <div class="mr-auto mb-2">
+                    <a class="is-inline-block"> <img class="image" src="img/logo_slogan.svg" alt="Butterfly" width="75%" /></a>
+                </div>
+                <div>
+                    <ul class="is-flex is-flex-wrap-wrap is-align-items-center is-justify-content-center">
+                        <li class="mr-6"><a class="is-link" href="flavors.html">Sabores</a></li>
+                        <li class="mr-6"><a class="is-link">Nosotras</a></li>
+                        <li><a class="is-link">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="container">
+            <div class="is-flex-tablet is-justify-content-between is-align-items-center">
+                <p>
+                    <strong>BUTTERFLY</strong> por
+                    <a href="https://github.com/JessicaMabelVH" target="_blank" rel="noopener noreferrer">Jessica Mabel VH</a>.<br
+                        class="is-hidden-tablet"
+                    />
+                    Práctica de HTML para LAUNCHX.
+                </p>
+                <div class="py-2 is-hidden-tablet"></div>
+                <div class="ml-auto">
+                    <a class="mr-4 is-inline-block"> <i class="bx bxl-facebook-square bx-sm"></i></a>
+                    <a class="mr-4 is-inline-block"> <i class="bx bxl-twitter bx-sm"></i></a>
+                    <a class="mr-4 is-inline-block"><i class="bx bxl-instagram-alt bx-sm"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
 </html>
