@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Required meta tags ========== -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="msapplication-tap-highlight" content="no" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#3757d5">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="Vacunaci&oacute;n">
+    <meta name="application-name" content="Vacunaci&oacute;n">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-config" content="favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Vacunación</title>
+
+    <!-- Bootstrap CSS ========== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link href="css/style.min.css" rel="stylesheet" />
+    <link href="css/custom.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <div class="container-fluid bg-hero"></div>
+
+    <!-- Nav menu ========== -->
+    <nav class="navbar navbar-expand-lg navbar-light py-4 bg-blur">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-4 text-primary" href="">Vacunación</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold me-md-5">
+                    <li class="nav-item me-lg-4">
+                        <a class="nav-link">Base de datos</a>
+                    </li>
+                    <li class="nav-item me-lg-4">
+                        <a class="nav-link">Educación</a>
+                    </li>
+                    <li class="nav-item me-lg-4">
+                        <a class="nav-link">Noticias</a>
+                    </li>
+                    <li class="nav-item me-lg-4">
+                        <a class="nav-link">Regulación</a>
+                    </li>
+                </ul>
+                <button type="button" class="btn btn-primary shadow px-4
+                        py-2">Infórmate</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section ========== -->
+    <section class="container my-5 my-md-5 pb-5 py-md-5">
+        <div class="row">
+            <div class="col-md-6 col-xl-5">
+                <h2 class="display-5 fw-bold text-info text-capitalize lh-1
+                        mb-5">Combate el virus con las vacunas</h2>
+                <p class="lead text-black-50 mb-5">
+                    Detengamos esta pandemia matando el virus con una
+                    vacuna, no dejes que tú y tu familia se infecten.
+                </p>
+                <div class="d-flex flex-column flex-sm-row flex-md-column
+                        flex-lg-row">
+                    <div class="mb-3 mb-sm-auto mb-md-3 mb-lg-auto">
+                        <i class="bi bi-shield-fill-check fs-6 text-warning
+                                bg-warning bg-opacity-10 rounded-1 border-0
+                                flex-shrink-0 shadow-blue-icon me-2 py-1 px-2"></i>
+                        <span class="text-info me-5">Mejor protección</span>
+                    </div>
+                    <div class="m-0">
+                        <i class="bi bi-star-fill fs-6 text-warning
+                                bg-warning bg-opacity-10 rounded-1 border-0
+                                flex-shrink-0 shadow-blue-icon me-2 py-1 px-2"></i>
+                        <span class="text-info">Vacunas selectas</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 offset-lg-1 col-xl-6 offset-xl-1 mt-5">
+                <img src="img/bg_01_thumb.jpg" class="img-thumbnail d-block
+                        d-md-none" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section ========== -->
+    <section class="container" id="schedule">
+        <div class="fw-bolder mb-5">
+            <i class="bi bi-clock-fill text-primary bg-primary bg-opacity-10
+                    rounded-1 border-0 flex-shrink-0 shadow-blue-icon me-3 py-1 px-2"></i>
+            <span class="text-info fs-5">Agenda tu vacuna</span>
+        </div>
+        <div class="col col-lg-11 col-xl-8">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3
+                    row-cols-lg-4 g-4 p-3 bg-white bg-opacity-75 bg-blur-shadow rounded-3">
+                <div class="d-flex align-items-start">
+                    <i class="bi bi-geo-alt-fill text-primary bg-primary
+                            bg-opacity-10 rounded-1 border-0 flex-shrink-0 me-3
+                            py-1 px-2"></i>
+                    <div class="fs-5">
+                        <p class="text-black-50 mb-0">Ubicación</p>
+                        <p class="text-info fw-bolder">Pepsi Center</p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-start">
+                    <i class="bi bi-calendar-fill text-primary bg-primary
+                            bg-opacity-10 rounded-1 border-0 flex-shrink-0 me-3
+                            py-1 px-2"></i>
+                    <div class="fs-5">
+                        <p class="text-black-50 mb-0">Fecha</p>
+                        <p class="text-info fw-bolder">14-19 / feb</p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-start">
+                    <i class="bi bi-pencil-fill text-primary bg-primary
+                            bg-opacity-10 rounded-1 border-0 flex-shrink-0 me-3
+                            py-1 px-2"></i>
+                    <div class="fs-5">
+                        <p class="text-black-50 mb-0">Vacuna</p>
+                        <p class="text-info fw-bolder">AstraZeneca</p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-start">
+                    <button class="btn btn-primary shadow px-4 py-2">Registrar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vaccines Section ========== -->
+    <section class="container d-flex align-items-center bg-white rounded-3
+            my-5 py-5">
+        <div class="row row-cols-2 row-cols-sm-4 g-0">
+            <div class="text-center">
+                <img class="img-fluid opacity-25" alt="AstraZeneca" src="img/01_astrazeneca.png" />
+            </div>
+            <div class="text-center">
+                <img class="img-fluid opacity-25" alt="Sinovac" src="img/02_sinovac.png" />
+            </div>
+            <div class="text-center">
+                <img class="img-fluid opacity-25" alt="Pfizer" src="img/03_pfizer.png" />
+            </div>
+            <div class="text-center">
+                <img class="img-fluid opacity-25" alt="Moderna" src="img/04_moderna.png" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Information Section 1  ========== -->
+    <section class="container d-flex align-items-center pt-5 mt-5">
+        <div class="row">
+            <div class="col-lg-6">
+                <h2 class="display-5 fw-bold text-info lh-1 mb-5">¿Por qué
+                    debo vacunarme?</h2>
+                <p class="lead text-black-50 mb-5">
+                    Para evitar cualquier duda sobre la vacunación contra el
+                    <span class="text-nowrap">COVID-19</span>, identifique
+                    los siguientes
+                    4 beneficios de la vacunación en contra del virus:
+                </p>
+            </div>
+            <div class="col-12">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+                    <div class="col">
+                        <div class="p-4 col-equal-h border border-4
+                                border-light rounded-3 hover-shadow">
+                            <div class="bg-primary bg-opacity-10
+                                    text-primary fs-3 rounded-3 px-3 py-2 mb-3">
+                                <i class="bi bi-toggles2"></i>
+                            </div>
+                            <h3 class="text-info fs-5 fw-bold">Minimizar la
+                                propagación del virus</h3>
+                            <p class="text-black-50">
+                                La vacuna ha demostrado su eficacia para
+                                evitar que alguien se infecte con el
+                                coronavirus.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="p-4 col-equal-h border border-4
+                                border-light rounded-3 hover-shadow">
+                            <div class="bg-primary bg-opacity-10
+                                    text-primary fs-3 rounded-3 px-3 py-2 mb-3">
+                                <i class="bi bi-shield-fill-check"></i>
+                            </div>
+                            <h3 class="text-info fs-5 fw-bold">Formación de
+                                anticuerpos</h3>
+                            <p class="text-black-50">La vacuna ayuda a dar
+                                forma a la respuesta de anticuerpos para el
+                                sistema inmunológico.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="p-4 col-equal-h border border-4
+                                border-light rounded-3 hover-shadow">
+                            <div class="bg-primary bg-opacity-10
+                                    text-primary fs-3 rounded-3 px-3 py-2 mb-3">
+                                <i class="bi bi-people-fill"></i>
+                            </div>
+                            <h3 class="text-info fs-5 fw-bold">Proteger a
+                                las personas cercanas</h3>
+                            <p class="text-black-50">
+                                Otro beneficio de la vacunación que
+                                recibimos es que también puede ayudar a
+                                proteger a las personas que nos
+                                rodean.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="p-4 col-equal-h border border-4
+                                border-light rounded-3 hover-shadow">
+                            <div class="bg-primary bg-opacity-10
+                                    text-primary fs-3 rounded-3 px-3 py-2 mb-3">
+                                <i class="bi bi-arrow-up-right-square-fill"></i>
+                            </div>
+                            <h3 class="text-info fs-5 fw-bold">Crear
+                                inmunidad de grupo</h3>
+                            <p class="text-black-50">
+                                La vacunación contra el <span class="text-nowrap">COVID-19</span>
+                                también es beneficiosa para crear inmunidad
+                                grupal o colectiva.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Information Section 2  ========== -->
+    <section class="container pt-5 mt-5">
+        <div class="row d-flex align-items-end">
+            <div class="col-lg-6 ps-auto ps-lg-0">
+                <img src="img/bg_02_thumb.png" class="img-thumbnail d-block
+                        d-lg-none mb-5" />
+                <img src="img/bg_02.png" class="img-fluid d-none d-lg-block" />
+            </div>
+            <div class="col-lg-6">
+                <h2 class="display-5 fw-bold text-info lh-1 mb-5">Preparativos
+                    antes de la vacuna</h2>
+                <p class="lead text-black-50 mb-5">
+                    El éxito de las vacunas está fuertemente influenciado
+                    por la fortaleza del sistema inmunológico del cuerpo.
+                    Por lo tanto, hay
+                    varias cosas que se pueden intentar para que la vacuna
+                    contra el <span class="text-nowrap">COVID-19</span>
+                    funcione:
+                </p>
+                <div class="accordion" id="accordionPreparations">
+                    <div class="accordion-item border-4 border-light mb-3">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button text-info
+                                    fw-bold
+                                    collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                <i class="bi bi-clipboard-minus-fill fs-6
+                                        text-primary bg-primary bg-opacity-10
+                                        rounded-1 border-0 me-3 py-1 px-2"></i>
+                                Evitar bebidas alcohólicas
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse
+                                collapse" aria-labelledby="headingOne" data-bs-parent="#accordionPreparations">
+                            <div class="accordion-body text-black-50"></div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-4 border-light
+                            border-top rounded-3 mb-3">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button text-info
+                                    fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                <i class="bi bi-clipboard-x-fill fs-6
+                                        text-primary bg-primary bg-opacity-10
+                                        rounded-1 border-0 me-3 py-1 px-2"></i>
+                                Evitar el estrés
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse
+                                collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionPreparations">
+                            <div class="accordion-body text-black-50 px-5">
+                                El estrés tiene un efecto profundo en el
+                                trabajo inmunológico. Además, el estrés
+                                prolongado puede aumentar la
+                                producción de cortisol y el estrés oxidativo
+                                en el cuerpo.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-4 border-light
+                            border-top rounded-3 mb-3">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button text-info
+                                    fw-bold
+                                    collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <i class="bi bi-clipboard-data-fill fs-6
+                                        text-primary bg-primary bg-opacity-10
+                                        rounded-1 border-0 me-3 py-1 px-2"></i>
+                                Comer comida sana
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse
+                                collapse" aria-labelledby="headingThree" data-bs-parent="#accordionPreparations">
+                            <div class="accordion-body text-black-50"></div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-4 border-light
+                            border-top rounded-3 mb-3">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button text-info
+                                    fw-bold
+                                    collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                <i class="bi bi-clipboard-check-fill fs-6
+                                        text-primary bg-primary bg-opacity-10
+                                        rounded-1 border-0 me-3 py-1 px-2"></i>
+                                Dormir lo suficiente
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse
+                                collapse" aria-labelledby="headingFour" data-bs-parent="#accordionPreparations">
+                            <div class="accordion-body text-black-50"></div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-4 border-light
+                            border-top rounded-3 mb-3">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button text-info
+                                    fw-bold
+                                    collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                <i class="bi bi-clipboard-heart-fill fs-6
+                                        text-primary bg-primary bg-opacity-10
+                                        rounded-1 border-0 me-3 py-1 px-2"></i>
+                                Ejercicio o actividad física
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse
+                                collapse" aria-labelledby="headingFive" data-bs-parent="#accordionPreparations">
+                            <div class="accordion-body text-black-50"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section  ========== -->
+    <section class="container mt-5 pt-5">
+        <div class="row d-flex align-items-end">
+            <div class="col-lg-6 col-xl-6 order-last order-lg-first">
+                <h2 class="display-5 fw-bold text-info lh-1 mb-5">Contacto
+                    de emergencia</h2>
+                <p class="lead text-black-50 mb-5">
+                    Comuníquese con uno de los contactos a continuación si
+                    usted o su familia no se sienten bien y tienen síntomas
+                    similares, como
+                    <span class="text-nowrap">COVID-19</span>, asegúrese de
+                    cuidarse también antes de informarnos:
+                </p>
+                <div class="row row-cols-1 row-cols-md-2 g-3 g-lg-2">
+                    <div class="col">
+                        <div class="border border-4 border-light rounded-3
+                                p-4 col-equal-h-between hover-shadow">
+                            <div class="d-flex align-items-start">
+                                <i class="bi bi-telephone-fill fs-3
+                                        text-primary bg-primary bg-opacity-10
+                                        rounded-1 border-0 flex-shrink-0 me-3
+                                        py-2 px-3"></i>
+                                <div>
+                                    <p class="text-info fw-bolder fs-5
+                                            mb-0">Teléfono</p>
+                                    <p class="text-black-50">55 1234 5676</p>
+                                </div>
+                            </div>
+                            <div class="d-grid col-12 bg-primary
+                                    bg-opacity-10 mt-4">
+                                <button class="btn btn-outline-primary
+                                        fw-bold border-0 py-3" type="button">Llamar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="border border-4 border-light rounded-3
+                                p-4 col-equal-h-between hover-shadow">
+                            <div class="d-flex align-items-start">
+                                <i class="bi bi-chat-dots-fill fs-3
+                                        text-primary bg-primary bg-opacity-10
+                                        rounded-1 border-0 flex-shrink-0 me-3
+                                        py-2 px-3"></i>
+                                <div>
+                                    <p class="text-info fw-bolder fs-5
+                                            mb-0">Chat</p>
+                                    <p class="text-black-50">55 1234 5677</p>
+                                </div>
+                            </div>
+                            <div class="d-grid col-12 bg-primary
+                                    bg-opacity-10 mt-4">
+                                <button class="btn btn-outline-primary
+                                        fw-bold border-0 py-3" type="button">Chatear</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="border border-4 border-light rounded-3
+                                p-4 col-equal-h-between hover-shadow">
+                            <div class="d-flex align-items-start">
+                                <i class="bi bi-camera-video-fill fs-3
+                                        text-primary bg-primary bg-opacity-10
+                                        rounded-1 border-0 flex-shrink-0 me-3
+                                        py-2 px-3"></i>
+                                <div>
+                                    <p lang="es" class="text-info fw-bolder fs-5 mb-0
+                                            hyphens-auto">Video&shy;llamada</p>
+                                    <p class="text-black-50">55 1234 5678</p>
+                                </div>
+                            </div>
+                            <div class="d-grid col-12 bg-primary
+                                    bg-opacity-10 mt-4">
+                                <button class="btn btn-outline-primary
+                                        fw-bold border-0 py-3" type="button">Videollamar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="border border-4 border-light rounded-3
+                                p-4 col-equal-h-between hover-shadow">
+                            <div class="d-flex align-items-start">
+                                <i class="bi bi-envelope-fill fs-3
+                                        text-primary bg-primary bg-opacity-10
+                                        rounded-1 border-0 flex-shrink-0 me-3
+                                        py-2 px-3"></i>
+                                <div>
+                                    <p class="text-info fw-bolder fs-5
+                                            mb-0">Mensaje</p>
+                                    <p class="text-black-50">55 1234 5679</p>
+                                </div>
+                            </div>
+                            <div class="d-grid col-12 bg-primary
+                                    bg-opacity-10 mt-4">
+                                <button class="btn btn-outline-primary
+                                        fw-bold border-0 py-3" type="button">Mensajear</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 pe-auto pe-lg-0 order-first order-lg-last">
+                <img src="img/bg_03_thumb.png" class="img-thumbnail d-block
+                        d-lg-none mb-5" />
+                <img src="img/bg_03.png" class="img-fluid d-none d-lg-block" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer ========== -->
+    <footer class="bg-primary bg-opacity-10 mt-5">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-5 py-5">
+                <div class="col col-sm-8">
+                    <a href="" class="d-flex align-items-center mb-3
+                            text-decoration-none fs-4 fw-bold">Vacunación</a>
+                    <p class="text-muted text-black-50">Nuestro objetivo es
+                        ayudar al mundo a liberarse de la pandemia en curso.</p>
+                </div>
+
+                <div class="col"></div>
+
+                <div class="col mt-3 mt-lg-auto">
+                    <h5 class="fw-bold text-info">Nosotros</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a class="nav-link p-0 text-muted">Sobre
+                                Nosotros</a></li>
+                        <li class="nav-item mb-2"><a class="nav-link p-0 text-muted">Características</a></li>
+                        <li class="nav-item mb-2"><a class="nav-link p-0 text-muted">Noticias y
+                                Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="col mt-3 mt-lg-auto">
+                    <h5 class="fw-bold text-info">Organización</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a class="nav-link p-0 text-muted">¿Cómo
+                                Trabajamos?</a></li>
+                        <li class="nav-item mb-2"><a class="nav-link p-0 text-muted">Capital</a></li>
+                        <li class="nav-item mb-2"><a class="nav-link p-0 text-muted">Seguridad</a></li>
+                    </ul>
+                </div>
+
+                <div class="col mt-3 mt-lg-auto">
+                    <h5 class="fw-bold text-info">Soporte</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a class="nav-link p-0 text-muted">Preguntas
+                                Frecuentes</a></li>
+                        <li class="nav-item mb-2"><a class="nav-link p-0 text-muted">Centro de
+                                Ayuda</a></li>
+                        <li class="nav-item mb-2"><a class="nav-link p-0 text-muted">Contáctanos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-flex flex-column flex-md-row
+                    justify-content-md-between pt-0 mt-0 pt-lg-4 mt-lg-4">
+                <p class="text-black-50">© 2022 Vacunación. <br class="d-block d-md-none" />Todos los derechos
+                    reservados.</p>
+                <ul class="list-unstyled d-flex mt-4 mt-md-auto">
+                    <li>
+                        <a class="text-decoration-none text-black-50">Términos y Condiciones</a>
+                    </li>
+                    <li class="ms-4">
+                        <a class="text-decoration-none text-black-50">Política de Privacidad</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container bg-white rounded-top">
+            <div class="d-flex flex-column flex-lg-row
+                    justify-content-md-between align-items-baseline py-4 mt-4">
+                <p class="text-black-50"><span class="text-primary fw-bold">Vacunación</span> por <a href="https://github.com/JessicaMabelVH" target="_blank" rel="noopener noreferrer" class="text-decoration-none">Jessica Mabel VH</a>.<br class="d-block d-lg-none" /> Práctica de CSS para LAUNCHX.</p>
+                <a href="https://github.com/JessicaMabelVH" target="_blank" rel="noopener noreferrer" class="fs-4"><i class="bi bi-github"></i></a>
+                <p class="text-black-50 mt-4 mt-lg-auto">Diseño original de <a href="https://dribbble.com/shots/16001939-Vaccination-Vaccine-landing-page-website" target="_blank" rel="noopener noreferrer" class="text-decoration-none">Adhiari Subekti</a>.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS ========== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+
+</html>
