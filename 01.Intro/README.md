@@ -42,6 +42,6 @@ Descripción:
 
 - [Toma de requerimientos](requerimientos_de_software.pdf)
 - [*Buyer persona*](buyer_persona.pdf)
-- [*Público objetivo*](publico_objetivo.pdf)
+- [Público objetivo](publico_objetivo.pdf)
 - [*Wireframe*](https://rebrand.ly/WFabogabot)
-- [*UI*](https://rebrand.ly/UIabogabot)
+- [UI](https://rebrand.ly/UIabogabot)

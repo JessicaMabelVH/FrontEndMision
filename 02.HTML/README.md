@@ -37,5 +37,4 @@ Bonus:
 
 ## Resolución:
 
-- 🔗[Preview](https://ryf34h.csb.app/)
-- 🔗[CodeSandbox](https://codesandbox.io/embed/damp-wood-ryf34h?fontsize=14&hidenavigation=1&theme=dark&view=preview)
+- [CodeSandbox (Vista previa)](https://rebrand.ly/HTMLPasteleria)

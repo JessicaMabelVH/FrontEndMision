@@ -1,10 +1,13 @@
 # Misión FrontEnd
 
 ## Organización
-El curso tiene 8 módulos que tienen dentro varios subtemas que iremos viendo conforme avance el curso.
+El curso cuenta con 8 módulos:
 
-### Programación FrontEnd
+<details>
+  <summary>1. Programación FrontEnd</summary>
 
+  ### Módulo 1
+  
 - ¿Qué es la programación FRONTEND?
 - ¿Para qué sirve la programación FRONTEND?
 - ¿En qué consiste la programación FRONTEND?
@@ -12,8 +15,12 @@ El curso tiene 8 módulos que tienen dentro varios subtemas que iremos viendo co
 - SETUP de programación Web
 - Estructura de páginas web
 - Estructura y limpieza de código
+</details>
 
-###  HTML
+<details>
+  <summary>2. HTML</summary>
+  
+  ### Módulo 2 
 
 - ¿Qué es HTML?
 - Estructura del archivo HTML
@@ -34,8 +41,12 @@ El curso tiene 8 módulos que tienen dentro varios subtemas que iremos viendo co
 - Filas y columnas / Rows & Columns
 - Propiedades de etiquetas / Properties
 - Práctica de HTML
+</details>
 
-###  CSS
+<details>
+  <summary>3. CSS</summary>
+
+  ### Módulo 3
 
 - ¿Qué es CSS?
 - Selectores / Selector
@@ -50,8 +61,12 @@ El curso tiene 8 módulos que tienen dentro varios subtemas que iremos viendo co
 - Flexbox
 - Librerías de CSS
 - Práctica de CSS
+</details>
 
-### JavaScript
+<details>
+  <summary>4. JavaScript</summary>
+
+  ### Módulo 4
 
 - ¿Qué es JS?
 - Variables, tipos y operadores
@@ -67,8 +82,12 @@ El curso tiene 8 módulos que tienen dentro varios subtemas que iremos viendo co
 - Consumo de API
 - Librerías y paquetes de JS
 - Práctica de JS
+</details>
 
-### Vue JS
+<details>
+  <summary>5. Vue JS</summary>
+
+  ### Módulo 5
  
 - ¿Qué es VueJS?
 - Setup de VueJS
@@ -80,8 +99,12 @@ El curso tiene 8 módulos que tienen dentro varios subtemas que iremos viendo co
 - Rutas
 - JSON Server
 - Práctica de Vue
+</details>
 
-###  VUEX
+<details>
+  <summary>6. VUEX</summary>
+
+  ### Módulo 6
 
 - ¿Qué es VUEX?
 - Patrón de manejo de estado
@@ -92,8 +115,12 @@ El curso tiene 8 módulos que tienen dentro varios subtemas que iremos viendo co
 - Acciones
 - Módulos
 - Práctica VUEX
+</details>
 
-### Angular
+<details>
+  <summary>7. Angular</summary>
+
+  ### Módulo 7
 
 - ¿Qué es Angular?
 - Prerequisitos y setup
@@ -104,10 +131,48 @@ El curso tiene 8 módulos que tienen dentro varios subtemas que iremos viendo co
 - Aplicación de ejemplo
 - Práctica de Angular
 - Despliegue de aplicación
+</details>
 
-### Azure
+<details>
+  <summary>8. Azure</summary>
+
+  ### Módulo 8
 
 - Azure Static Web App
 - Setup
 - Github Actions
 - Mantenimiento de tu aplicación
+</details>
+
+
+## Prácticas
+Resolución de las prácticas.
+
+<details>
+  <summary>1. Programación FrontEnd</summary>
+
+  ### 🔗 [Módulo 1](01.Intro)
+  
+- [Toma de requerimientos](01.Intro/requerimientos_de_software.pdf)
+- [*Buyer persona*](01.Intro/buyer_persona.pdf)
+- [Público objetivo](01.Intro/publico_objetivo.pdf)
+- [*Wireframe*](https://rebrand.ly/WFabogabot)
+- [UI](https://rebrand.ly/UIabogabot)
+</details>
+
+<details>
+  <summary>2. HTML</summary>
+
+  ### 🔗 [Módulo 2](02.HTML)
+  
+- [CodeSandbox (Vista previa)](https://rebrand.ly/HTMLPasteleria)
+</details>
+
+<details>
+  <summary>3. CSS</summary>
+
+  ### 🔗 [Módulo 3](03.CSS)
+  
+- [Plan de mercadotecnia](03.CSS/plan_de_mercadotecnia.pdf)
+- [CodeSandbox (Vista previa)](https://rebrand.ly/CSSVacunacion)
+</details>

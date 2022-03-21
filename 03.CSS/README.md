@@ -16,6 +16,5 @@ Bonus:
 - Bonus de despliegue de la página.
 
 ## Resolución
-- 🔗 [Plan de mercadotecnia](plan_de_mercadotecnia.pdf)
-- 🔗 [Preview](https://n3yz6z.csb.app/)
-- 🔗 [CodeSandbox](https://codesandbox.io/embed/determined-pateu-n3yz6z?fontsize=14&hidenavigation=1&theme=dark&view=preview)
+- [Plan de mercadotecnia](plan_de_mercadotecnia.pdf)
+- [CodeSandbox (Vista previa)](https://rebrand.ly/CSSVacunacion)
