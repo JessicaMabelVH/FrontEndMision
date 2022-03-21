@@ -1,0 +1,92 @@
+/*
+* Custom CSS
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+.bg-hero {
+    background-image: url("../img/bg_01.jpg");
+    background-size: 50%;
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+    position: absolute;
+    min-height: 90vh;
+    z-index: -9
+}
+
+@media(max-width:767.98px) {
+    .bg-hero {
+        display: none
+    }
+}
+
+.bg-blur, .bg-blur-shadow {
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.5)
+}
+
+.col-equal-h, .col-equal-h-between {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.col-equal-h-between {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: transparent
+}
+
+.bg-blur-shadow, .hover-shadow:hover, .accordion-body:not(.collapsed) {
+    -webkit-box-shadow: 
+        0 2.1px 5.3px rgba(55, 87, 213, 0.032), 
+        0px 10px 17.9px rgba(55, 87, 213, 0.048), 
+        0px 60px 80px rgba(55, 87, 213, 0.08);
+    box-shadow: 
+        0 2.1px 5.3px rgba(55, 87, 213, 0.032), 
+        0px 10px 17.9px rgba(55, 87, 213, 0.048), 
+        0px 60px 80px rgba(55, 87, 213, 0.08)
+}
+
+.shadow-blue-icon, .accordion-button:not(.collapsed) i {
+    -webkit-box-shadow: 
+        0 2.1px 5.3px rgba(55, 87, 213, 0.08), 
+        0px 10px 17.9px rgba(55, 87, 213, 0.1), 
+        0px 20px 80px rgba(55, 87, 213, 0.5);
+    box-shadow: 
+        0 2.1px 5.3px rgba(55, 87, 213, 0.08), 
+        0px 10px 17.9px rgba(55, 87, 213, 0.1), 
+        0px 20px 80px rgba(55, 87, 213, 0.5)
+}
+
+.hover-shadow:hover {
+    border-color: #fff !important;
+    -webkit-transition: all .4s cubic-bezier(0.77, 0, 0.175, 1);
+    -o-transition: all .4s cubic-bezier(0.77, 0, 0.175, 1);
+    transition: all .4s cubic-bezier(0.77, 0, 0.175, 1)
+}
+
+.hyphens-auto {
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto
+}
+
+a {
+    cursor: pointer
+}
