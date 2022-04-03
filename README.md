@@ -176,3 +176,11 @@ Resolución de las prácticas.
 - [Plan de mercadotecnia](03.CSS/plan_de_mercadotecnia.pdf)
 - [CodeSandbox (Vista previa)](https://rebrand.ly/CSSVacunacion)
 </details>
+
+<details>
+  <summary>4. JavaScript</summary>
+
+  ### 🔗 [Módulo 4](04.JS)
+  
+- [CodeSandbox (Vista previa)](https://rebrand.ly/JSPokedex)
+</details>

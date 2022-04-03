@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/favicon/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="Pokedex">
+    <meta name="application-name" content="Pokedex">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <title>POKEDEX</title>
+
+    <link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
+    <link href="css/custom.min.css" rel="stylesheet" />
+</head>
+
+<body class="nes-container is-dark py-5">
+    <main class="container-fluid">
+        <div class="nes-container with-title is-centered bg-red">
+            <h1 class="title"><a href="">POKEDEX</a></h1>
+            <div class="row">
+                <div class="col-md-6 gx-0">
+                    <div class="nes-container with-title is-centered is-dark is-rounded col-equal-h">
+                        <h2 class="title">Buscador</h2>
+                        <p class="text-center"><i class="nes-ash"></i></p>
+                        <div class="nes-field text-center w-100">
+                            <label for="name_field">¿Quién es ese pokémon?</label>
+                            <input type="text" id="pokeSearch" class="nes-input is-warning text-center w-70 d-inline" placeholder="Nombre o ID" />
+                            <button id="pokeFetch" type="button" class="nes-btn is-warning w-20" onclick="fetchPokemon()" title="Buscar"><img src="img/search-alt-regular-24.png" class="pixel"></button>
+                        </div>
+                        <div class="my-5">
+                            <button id="pokeRandom" class="nes-btn is-success bottom-left w-20" onclick="randomPokemon()" title="Aleatorio">
+                                <img src="img/shuffle-regular-24.png" title="Aleatorio" class="pixel">
+                            </button>
+                            <button class="nes-btn is-error bottom-right w-20" onclick="clearSearch()" title="Limpiar">
+                                <img src="img/x-regular-24.png" title="Limpiar" class="pixel">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 gx-0">
+                    <div class="nes-container with-title is-centered is-dark is-rounded col-equal-h">
+                        <h2 class="title">Pokémon</h2>
+                        <h3 class="text-center text-capitalize">
+                            #<span id="pokeID"></span><br />
+                            <span id="pokeName"></span>
+                        </h3>
+                        <img src="img/pokemon.png" id="pokeSprite" alt="Pokémon" height="125px" class="m-5 align-self-center pixelated" />
+                        <div class="col-12 gy-5 pt-4">
+                            <button class="nes-btn is-primary bottom-left w-20" title="Anterior" onclick="previousPokemon()">
+                                <img src="img/chevron-left-regular-24.png" class="pixel">
+                            </button>
+                            <button class="nes-btn is-primary bottom-right w-20" title="Siguiente" onclick="nextPokemon()">
+                                <img src="img/chevron-right-regular-24.png" class="pixel">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 gx-0">
+                    <div class="nes-container with-title is-centered is-dark is-rounded col-equal-h">
+                        <h2 class="title">Información</h2>
+                        <div class="row text-capitalize text-left">
+                            <div class="col-lg-6">
+                                Tipo:
+                                <ul class="nes-list is-disc pokeType"></ul>
+                            </div>
+                            <div class="col-lg-6">
+                                Medidas:
+                                <ul class="nes-list is-circle">
+                                    <li id="pokeHeight"></li>
+                                    <li id="pokeWeight"></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6">
+                                Habilidades:
+                                <ul class="nes-list is-disc pokeAbility"></ul>
+                            </div>
+                            <div class="col-lg-6">
+                                Experiencia base:
+                                <ul class="nes-list is-circle">
+                                    <li id="pokeExp"></li>
+                                </ul>
+                            </div>
+                            <div class="mt-5">
+                                <button type="button" class="nes-btn is-warning bottom-right w-20 text-center" title="Movimientos" onclick="showModalInfo()">
+                                    <img src="img/zap-solid-24.png" class="pixel">
+                                </button>
+                                <div class="modal" aria-hidden="true" id="pokeMovesModal">
+                                    <div class="nes-container is-rounded modal_box">
+                                        <h3>Movimientos</h3>
+                                        <ol id="pokeMoves"></ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 gx-0">
+                    <div class="nes-container with-title is-centered is-dark is-rounded col-equal-h">
+                        <h2 class="title">Estadísticas</h2>
+                        <div id="pokeStats" class="row w-100 gx-0">
+                            <div class="col-6">
+                                <div class="value" data-label="HP" title="HP">
+                                    <progress class="nes-progress"></progress>
+                                </div>
+                                <div class="value" data-label="ATK" title="ATTACK">
+                                    <progress class="nes-progress"></progress>
+                                </div>
+                                <div class="value" data-label="DEF" title="DEFENSE">
+                                    <progress class="nes-progress"></progress>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="value" data-label="SPA" title="SPECIAL-ATTACK">
+                                    <progress class="nes-progress"></progress>
+                                </div>
+                                <div class="value" data-label="SPD" title="SPECIAL-DEFENSE">
+                                    <progress class="nes-progress"></progress>
+                                </div>
+                                <div class="value" data-label="SPE" title="SPEED">
+                                    <progress class="nes-progress"></progress>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="container-fluid mt-4">
+        <div class="nes-container with-title is-centered bg-red">
+            <h2 class="title"><a href="">CRÉDITOS</a></h2>
+            <div class="nes-container is-dark is-rounded">
+                <div class="message-list">
+                    <div class="message left">
+                        <a href="https://github.com/JessicaMabelVH" target="_blank" rel="noopener" class="text-decoration-none">
+                            <i class="nes-icon github is-large"></i>
+                        </a>
+                        <div class="nes-balloon from-left is-dark w-60">
+                            <p>POKEDEX por <a href="https://github.com/JessicaMabelVH" target="_blank" rel="noopener" class="text-white">Jessica Mabel VH</a>. Práctica de JS para LAUNCHX.</p>
+                            <button type="button" class="nes-btn" onclick="showModalCredits()">Ver recursos</button>
+                        </div>
+                    </div>
+                    <div class="message right">
+                        <div class="nes-balloon from-right is-dark w-60">
+                            <p>POKÉMON y todos los nombres respectivos son &reg; y &copy; de <a href="https://www.pokemon.com/es" target="_blank" rel="noopener" class="text-white">Nintendo</a> 1996-<span id="year"></span>.</p>
+                        </div>
+                        <a href="https://www.pokemon.com/es" target="_blank" rel="noopener" class="text-decoration-none">
+                            <i class="nes-pokeball"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" aria-hidden="true" id="modalCredits">
+                <div class="nes-container is-rounded modal_box">
+                    <div class="message-list">
+                        <div class="message right">
+                            <div class="nes-balloon from-right is-dark w-60">
+                                <p>NES.css by <a href="https://nostalgic-css.github.io/NES.css/" target="_blank" rel="noopener" class="text-white">B.C.Rikko</a>. NES-style(8bit-like) CSS Framework.</p>
+                            </div>
+                            <a href="https://nostalgic-css.github.io/NES.css/" target="_blank" rel="noopener" class="text-decoration-none">
+                                <i class="snes-jp-logo"></i>
+                            </a>
+                        </div>
+                        <div class="message left">
+                            <a href="https://pokeapi.co/" target="_blank" rel="noopener" class="text-decoration-none">
+                                <i class="nes-pokeball scale-50"></i>
+                            </a>
+                            <div class="nes-balloon from-left is-dark w-60">
+                                <p>PokéAPI by <a href="https://pokeapi.co/" target="_blank" rel="noopener" class="text-white">Paul Hallett & Colabora&shydores</a>. The RESTful Pokémon API.</p>
+                            </div>
+                        </div>
+                        <div class="message right">
+                            <div class="nes-balloon from-right is-dark w-60">
+                                <p>PokéAPI SVG and GIF Sprites by <a href="https://github.com/sashafirsov/pokeapi-sprites/" target="_blank" rel="noopener" class="text-white">Sasha Firsov</a>. To save load on PokéAPI.</p>
+                            </div>
+                            <a href="https://github.com/sashafirsov/pokeapi-sprites/" target="_blank" rel="noopener" class="text-decoration-none">
+                                <i class="nes-icon star is-medium"></i>
+                            </a>
+                        </div>
+                        <div class="message left">
+                            <a href="https://boxicons.com/" target="_blank" rel="noopener" class="text-decoration-none">
+                                <i class="nes-icon trophy is-medium"></i>
+                            </a>
+                            <div class="nes-balloon from-left is-dark w-60">
+                                <p>Boxicons by <a href="https://boxicons.com/" target="_blank" rel="noopener" class="text-white">Atisa</a>. Open source iconset with 1500+ icons.</p>
+                            </div>
+                        </div>
+                        <div class="message right">
+                            <div class="nes-balloon from-right is-dark w-60">
+                                <p>Grid by <a href="https://getbootstrap.com/" target="_blank" rel="noopener" class="text-white">Bootstrap</a>. Front-end open source toolkit.</p>
+                            </div>
+                            <a href="https://getbootstrap.com/" target="_blank" rel="noopener" class="text-decoration-none">
+                                <i class="nes-smartphone scale-50"></i>
+                            </a>
+                        </div>
+                        <div class="message left">
+                            <a href="https://github.com/AnTheMaker/Fusilli.js" target="_blank" rel="noopener" class="text-decoration-none">
+                                <i class="nes-icon like is-medium"></i>
+                            </a>
+                            <div class="nes-balloon from-left is-dark w-60">
+                                <p>Fusilli.js by <a href="https://github.com/AnTheMaker/Fusilli.js" target="_blank" rel="noopener" class="text-white">AnTheMaker</a>. A lightweight JavaScript Popup/Modal library.</p>
+                            </div>
+                        </div>
+                        <div class="message right">
+                            <div class="nes-balloon from-right is-dark w-60">
+                                <p>Dogica by <a href="https://www.dafont.com/dogica.font" target="_blank" rel="noopener" class="text-white">Roberto Mocci</a>. Monospace typeface. Webfont generated with Font Squirrel.</p>
+                            </div>
+                            <a href="https://www.dafont.com/dogica.font" target="_blank" rel="noopener" class="text-decoration-none">
+                                <i class="nes-icon heart is-medium"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="//cdn.jsdelivr.net/gh/anthemaker/fusilli.js/fusilli.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
