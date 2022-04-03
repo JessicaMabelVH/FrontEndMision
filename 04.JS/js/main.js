@@ -67,8 +67,8 @@ function fetchPokemonInfo(data) {
         type.textContent = data.types[i].type.name;
         pokemonType.appendChild(type);
     }
-    pokemonHeight.textContent = data.height + "m";
-    pokemonWeight.textContent = data.weight + "kg";
+    pokemonHeight.textContent = data.height / 10 + "m";
+    pokemonWeight.textContent = data.weight / 10 + "kg";
     pokemonAbility.innerHTML = "";
     for (let i = 0; i < data.abilities.length; i++) {
         const ability = document.createElement("li");
